@@ -28,7 +28,7 @@ def seo(domain_url):
     site_name = site_name_rules.findall(html)[0]
 
     print(str(domain_url).ljust(30), '\t', baidu, '\t', site_name)
-    return domain_url, int(baidu), site_name
+    return domain_url, int(baidu), site_name,time.time()
 
 
 def domain_rank(lines):
