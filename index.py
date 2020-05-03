@@ -5,7 +5,7 @@ from urllib import parse
 
 from utils.common import store_cookies
 from utils.crawler import Crawler
-
+import tkitFile
 spider = Crawler()
 
 
@@ -46,7 +46,9 @@ if __name__ == '__main__':
     span = 90
     # span = "20190907|20190918"
     # 关键词列表
-    all_words = ["百度", "指数", "爬虫", "移动", "接口"]
+    # all_words = ["百度", "指数", "爬虫", "移动", "接口"]
+    word=input("word:")
+    all_words=[word]
     indices = []
 
     # 转换关键词
@@ -85,6 +87,7 @@ if __name__ == '__main__':
                 "wise": decrypto(origin_data["index"][0]["_wise"], key)
             }
             indices.append(index)
-
+    tjson=tkitFile.Json("data.json")
+    tjson.save(indices)
     for index in indices:
         print(index)
