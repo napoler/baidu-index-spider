@@ -6,6 +6,8 @@ from urllib import parse
 from utils.common import store_cookies
 from utils.crawler import Crawler
 import tkitFile
+from config import *
+
 spider = Crawler()
 
 

@@ -28,3 +28,9 @@ python3 seo.py -r ./domain.txt
 domain.txt
 
 
+## 搜索
+
+MagicBaidu
+https://github.com/napoler/MagicBaidu?organization=napoler&organization=napoler
+
+
